@@ -41,9 +41,9 @@
                                             <td>Order ID</td>
                                             <td>Quantity</td>
                                             <!-- <td>Host Name</td> -->
-                                            <!-- <td>Serial Number</td> -->
+                                            <td>Serial Number</td>
                                             <td>Detail</td>
-                                            <td>Aksi</td>
+                                            <!-- <td>Aksi</td> -->
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -57,14 +57,14 @@
 												<td><?= $pd['version']; ?></td>
                                                 <td><?= $pd['order_id']; ?></td>
                                                 <td><?= $pd['quantity']; ?></td>
-                                                <!-- <td><?= $pd['serial_number']; ?></td> -->
+                                                <td><?= $pd['serial_number']; ?></td>
 												<td><a href="assets/img/berkas/<?php echo $pd['detail']; ?>" class="badge badge-primary">View</a></td>
                                                 <!-- <td><a href="<?= base_url('Produk/detail/') . $pd['id']; ?>" class="badge badge-primary">View</a></td>									 -->
-                                                <td>
+                                                <!-- <td>
                                                     <a href="<?= base_url('Produk/hapus/') . $pd['id']; ?>" class="badge badge-danger">Hapus</a>
                                                     <a href="<?= base_url('Produk/edit/') . $pd['id']; ?>" class="badge badge-warning">Edit</a>
-													<!-- <a href="<?= base_url('Produk/detail/') . $pd['id']; ?>" class="badge badge-primary">Detail</a> -->
-                                                </td>
+													<a href="<?= base_url('Produk/detail/') . $pd['id']; ?>" class="badge badge-primary">Detail</a>
+                                                </td> -->
                                             </tr>
                                             <?php $i++; ?>
                                         <?php endforeach; ?>
